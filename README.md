@@ -1,10 +1,10 @@
 # Rest-calculator
 REST API backend-frontend alkalmazás fejlesztés
 Project inicializálása:
-node -v
-npm init -y
+1. node -v
+2. npm init -y
 Modulok telepítése:
-npm install express cors
+3. npm install express cors
 REST API backend egyszerű számolási műveletek végrehajtására
 szerver.js fájl:
 A server.js egyetlen POST végpontot tartalmaz az aritmetikai műveletek végrehajtására.
