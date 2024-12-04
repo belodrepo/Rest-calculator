@@ -5,7 +5,7 @@ Project inicializálása:
 2. npm init -y
 Modulok telepítése:
 3. npm install express cors
-REST API backend egyszerű számolási műveletek végrehajtására
+# REST API backend egyszerű számolási műveletek végrehajtására
 szerver.js fájl:
 A server.js egyetlen POST végpontot tartalmaz az aritmetikai műveletek végrehajtására.
 
