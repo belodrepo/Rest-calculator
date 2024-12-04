@@ -22,7 +22,7 @@ A Promise objektum állapotai:
 frontend_alt.js fájl:
 REST API Klines oldali szkript az adatok küldésére és fogadására a REST Backend számára
 
-# REST API kliens megvalósítása (Promise) .then .catch láncolással.(aszinkron függvényhívás).
+REST API kliens megvalósítása (Promise) .then .catch láncolással.(aszinkron függvényhívás).
 Az aszinkron művelet visszatérési értéke egy Promise objektum.
 A Promise objektum állapotai:
 1. pending: várakozás az API-al való kapcsolatra
