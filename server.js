@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 
-//Máveleteket végrehajtó végpont
+//Műveleteket végrehajtó végpont
 app.post('/api/math/calculate', (req, res) => {
     const { num1, num2, operation } = req.body;
 
