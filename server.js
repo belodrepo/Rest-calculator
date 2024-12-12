@@ -4,9 +4,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-//Middleware - köztes alkalmazások
-app.use(express.json());
-app.use(cors());
+/*Middleware - köztes alkalmazások,
+a feladatuk többlet szolgáltatásokat hozzáadni az alkalmazáshoz. */
+app.use(express.json()); //JSON kezelése
+app.use(cors()); //Web böngésző CORS védelem kiiktatása
 
 
 //Műveleteket végrehajtó végpont
@@ -17,7 +18,7 @@ app.post('/api/math/calculate', (req, res) => {
     if (typeof num1 !== 'number' || typeof num2 !== 'number') {
         return res.status(400).json({ error: 'Hiányzó, vagy érvénytelen számok'})
     }
-
+//Számolási logika
     let result;
     if (operation == "add") {
         result = num1 + num2;
@@ -35,7 +36,7 @@ app.post('/api/math/calculate', (req, res) => {
 
 //A webszerver elindítása
 //A Unit teszthez szükésges módosítások!
-//Csak akkor indul el a szerver, ha mi adjuk ki a "node server.js" parancsot, egyébként nem.
+//Csak akkor induljon el a szerver, ha mi adjuk ki a "node server.js" parancsot, egyébként nem.
 if (require.main === module) {
 
 
