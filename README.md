@@ -31,3 +31,7 @@ A Promise objektum állapotai:
 
 index.html fájl
 Webes kezelőfelület HTML kódja
+
+#Unit test 
+Jest framework és supertest modul telepítése. 
+Leírás: doc.txt
