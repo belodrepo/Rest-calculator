@@ -1,0 +1,26 @@
+Használt tesztelési keretrendszer: Jest
+Használt modul: supertest
+
+1. Tesztelés csomagok telepítése:
+npm install --save-dev jest supertest
+
+2. A server.js kód módosítása:
+
+// Csak akkor indítjuk el a szervert, ha közvetlenül futtatják
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server is running on http://localhost:${port}`);
+    });
+}
+
+module.exports = app;
+
+
+3. package.json módosítása:
+  "scripts": {
+    "test": "jest"
+  },
+
+4. Tesztek írása
+
+5. Teszt futtatása: npm test

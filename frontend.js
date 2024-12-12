@@ -7,11 +7,11 @@ A Promise objektum állapotai:
 2. fullfilled: kapcsolat létrejött
 3. rejected: kapcsolat visszautasítva
 */
-//Átveszi a műveletet a Html-ből és eléri az input mezőkben megadott értékeket.
+
 async function calculate(operation) {
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
-//Megvizsgáljuk, hogy kapott-e értéket a két input mező.
+
     if(isNaN(num1) || isNaN(num2)) {
         document.getElementById('result').textContent = "Kérem adjon meg egy számot!";
         return;
